@@ -32,6 +32,14 @@ public class RechercheVilleTest {
         Assertions.assertEquals(List.of("Valence", "Vancouver"), result);
     }
 
+    @Test
+    public void testSearchWithSubstringReturnsCity() {
+        RechercheVille rechercheVille = new RechercheVille();
+        List<String> result = rechercheVille.rechercher("dap");
+        Assertions.assertEquals(List.of("Budapest"), result);
+    }
+
+
 
 }
 
