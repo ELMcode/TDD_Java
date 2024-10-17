@@ -25,6 +25,14 @@ public class RechercheVilleTest {
         Assertions.assertEquals(List.of("Valence", "Vancouver"), result);
     }
 
+    @Test
+    public void testSearchCaseInsensitive() {
+        RechercheVille rechercheVille = new RechercheVille();
+        List<String> result = rechercheVille.rechercher("va");
+        Assertions.assertEquals(List.of("Valence", "Vancouver"), result);
+    }
+
+
 }
 
 
