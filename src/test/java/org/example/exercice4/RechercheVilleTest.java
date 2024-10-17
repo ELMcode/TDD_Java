@@ -39,6 +39,16 @@ public class RechercheVilleTest {
         Assertions.assertEquals(List.of("Budapest"), result);
     }
 
+    @Test
+    public void testSearchWithAsteriskReturnsAllCities() {
+        RechercheVille rechercheVille = new RechercheVille();
+        List<String> result = rechercheVille.rechercher("*");
+        List<String> expected = List.of(
+                "Paris", "Marseille", "Lille", "Nice", "Nantes", "Toulouse", "Valence", "Vancouver", "Budapest"
+        );
+        Assertions.assertEquals(expected, result);
+    }
+
 
 
 }
