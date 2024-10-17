@@ -11,15 +11,19 @@ public class RechercheVille {
     );
 
     public List<String> rechercher(String search) {
-        if (search == null || search.length() < 2) {
+        if (search == null || (!search.equals("*") && search.length() < 2)) {
             throw new NotFoundException("la recherche doit contenir au moins 2 caractères");
+        }
+
+        if (search.equals("*")) {
+            return new ArrayList<>(cities);
         }
 
         List<String> results = new ArrayList<>();
 
-        for (String cities : cities) {
-            if (cities.toLowerCase().contains(search.toLowerCase())) {
-                results.add(cities);
+        for (String city : cities) {
+            if (city.toLowerCase().contains(search.toLowerCase())) {
+                results.add(city);
             }
         }
 
