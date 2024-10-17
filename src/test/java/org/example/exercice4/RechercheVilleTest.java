@@ -2,7 +2,10 @@ package org.example.exercice4;
 
 import org.example.exercice4.exception.NotFoundException;
 import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
 
 
 public class RechercheVilleTest {
@@ -14,5 +17,14 @@ public class RechercheVilleTest {
             rechercheVille.rechercher("A");
         });
     }
+
+    @Test
+    public void testSearchEqualOrMoreTwoCharactersReturnCity() {
+        RechercheVille rechercheVille = new RechercheVille();
+        List<String> result = rechercheVille.rechercher("Va");
+        Assertions.assertEquals(List.of("Valence", "Vancouver"), result);
+    }
+
 }
+
 
