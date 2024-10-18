@@ -1,5 +1,6 @@
-package org.example.exercice2;
+package org.example.TDD.exercice2;
 
+import org.example.TDD.exercice2.Fib;
 import org.junit.Assert;
 import org.junit.Test;
 import java.util.List;

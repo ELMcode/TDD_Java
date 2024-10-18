@@ -1,4 +1,4 @@
-package org.example.exercice2;
+package org.example.TDD.exercice2;
 
 import java.util.ArrayList;
 import java.util.List;

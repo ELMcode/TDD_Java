@@ -1,6 +1,7 @@
-package org.example.exercice4;
+package org.example.TDD.exercice4;
 
-import org.example.exercice4.exception.NotFoundException;
+import org.example.TDD.exercice4.RechercheVille;
+import org.example.TDD.exercice4.exception.NotFoundException;
 import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

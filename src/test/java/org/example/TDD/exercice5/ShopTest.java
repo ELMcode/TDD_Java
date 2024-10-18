@@ -1,5 +1,7 @@
-package org.example.exercice5;
+package org.example.TDD.exercice5;
 
+import org.example.TDD.exercice5.Product;
+import org.example.TDD.exercice5.Shop;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -1,5 +1,6 @@
-package org.example.exercice1;
+package org.example.TDD.exercice1;
 
+import org.example.TDD.exercice1.GradingCalculator;
 import org.junit.Assert;
 import org.junit.Test;
 

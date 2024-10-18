@@ -1,6 +1,6 @@
-package org.example.exercice4;
+package org.example.TDD.exercice4;
 
-import org.example.exercice4.exception.NotFoundException;
+import org.example.TDD.exercice4.exception.NotFoundException;
 
 import java.util.ArrayList;
 import java.util.List;
